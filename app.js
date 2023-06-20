@@ -14,6 +14,14 @@ function addToList(text) {
     const list = document.querySelector('#todayworklist');
 
     const newListItem = document.createElement('li');
+       
+    const checkbox = document.createElement('input');
+    
+    checkbox.setAttribute("id", "checkbox-id");
+
+    checkbox.setAttribute("type", "checkbox");
+    
+    document.body.appendChild(checkbox);
 
     newListItem.classList.add('list-item');
 
@@ -21,3 +29,4 @@ function addToList(text) {
     
     list.appendChild(newListItem);
 }
+
