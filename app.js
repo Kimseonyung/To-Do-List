@@ -17,16 +17,13 @@ function addToList(text) {
        
     const checkbox = document.createElement('input');
     
-    checkbox.setAttribute("id", "checkbox-id");
-
     checkbox.setAttribute("type", "checkbox");
-    
-    document.body.appendChild(checkbox);
 
     newListItem.classList.add('list-item');
 
     newListItem.innerHTML = text;
     
-    list.appendChild(newListItem);
+    list.append(newListItem, checkbox);
+    
 }
 
