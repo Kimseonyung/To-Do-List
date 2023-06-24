@@ -16,14 +16,22 @@ function addToList(text) {
     const newListItem = document.createElement('li');
        
     const checkbox = document.createElement('input');
+
+    const deleteButton = document.querySelector('#delete-button');
     
     checkbox.setAttribute("type", "checkbox");
 
     newListItem.classList.add('list-item');
 
     newListItem.innerHTML = text;
+
+    checkbox.setAttribute("id", Date.now());
+    
+    deleteButton.addEventListener ('click', () => {
+        
+        const DeleteButton = document.getElementsByClassName('list-item');
+        deleteButton.remove('list-item.id');
+    });
     
     list.append(newListItem, checkbox);
-    
-}
-
+};

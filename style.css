@@ -27,6 +27,14 @@
     color: #1f4078;
 }
 
+#delete-button {
+    width: 20;
+    background: skyblue;
+    border-radius: 4;
+    border: 1px solid #3f7ab5;
+    color: #1f4078;
+}
+
 .Todayworklistbox {
     display: flex;
     flex-direction: column;
